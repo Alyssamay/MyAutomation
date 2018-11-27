@@ -13,7 +13,7 @@ public class ProUtil {
 		return getProperties("/config.properties");
 	}
 	public static Properties getProperties(String fileName) {
-		Properties prop = propFileMap.get(fileName);
+		Properties prop = propFileMap.get(fileName);//获得key对应的value值
 		if (prop==null) {
 			prop =new Properties();
 		}
